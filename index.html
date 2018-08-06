@@ -1,0 +1,59 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Clone - GitHub</title>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="navigation__logo">
+            <img src="images/github.png" />
+        </div>
+        <form class="navigation__search">
+            <input placeholder="GitHub User"type="text">
+        </form>
+        <ul class="navigation__options">
+            <li>Pull Request</li>
+            <li>Issues</li>
+            <li>Gist</li>
+        </ul>
+    </nav>
+
+    <div class="full-container">
+        <aside class="sidebar" >
+            <div class="sidebar__photo">
+                <img src="images/profile.jpg"/>
+            </div>
+            <div class="sidebar__user">
+                <h3 class="sidebar__user__current-name"></h3>
+                <p class="sidebar__user__user-github"></p>
+            </div>
+            <button class="sidebar__button">Follow</button>
+            <p class="sidebar__report-user">Block or report user</p>
+            <hr>
+            <h4 class="sidebar__workplace"></h4>
+            <p class="sidebar__residence"></p>
+            <a class="sidebar__email"></a>
+            <a class="sidebar__web"></a>
+        </aside>
+
+        <section class="repos">
+            <article class="repos__single">
+                <h3 class="repos__single__title"></h3>
+                <p class="repos__single__description"></p>
+                <div class="repos__single__details">
+                    <p class="repos__single__details__language"></p>
+                    <p class="repos__single__details__commits"></p>
+                    <p class="repos__single__details__date"></p>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/3.8.3/superagent.min.js"></script>
+    <script src="secrets.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

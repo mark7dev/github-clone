@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700");
+* {
+  box-sizing: content-box; }
+
+body {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1%;
+  font-family: 'Fira Sans', sans-serif; }
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  background-color: #eeeeee;
+  padding: 10px 30px; }
+  .navigation__logo {
+    width: 25%;
+    display: flex;
+    justify-content: center; }
+    .navigation__logo img {
+      height: 50px;
+      width: 50px; }
+  .navigation__search {
+    width: 30%;
+    margin: 0;
+    display: flex;
+    align-items: center; }
+    .navigation__search input {
+      width: 100%; }
+  .navigation__options {
+    width: 45%;
+    padding: 0;
+    padding-left: 10%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .navigation__options li {
+      display: inline; }
+
+.full-container {
+  display: flex;
+  flex-direction: row; }
+
+.sidebar {
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 200px; }
+  .sidebar__photo {
+    width: 200px; }
+    .sidebar__photo img {
+      border-radius: 8px;
+      width: 200px; }
+  .sidebar__button {
+    width: 100%; }
+  .sidebar__report-user {
+    font-size: 10px;
+    color: gray; }
+  .sidebar__workplace {
+    margin: 0; }
+  .sidebar__email {
+    font-size: 12px; }
+  .sidebar__web {
+    font-size: 12px; }
+
+.repos {
+  width: 100%; }
+  .repos__single {
+    padding: 0 5%; }
+    .repos__single__details {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 20px;
+      border-bottom: 1px solid black; }
+      .repos__single__details__language {
+        padding-right: 16px;
+        margin: 0;
+        border-right: black solid 1px; }
+      .repos__single__details__commits {
+        padding: 0 16px;
+        margin: 0;
+        border-right: black solid 1px; }
+      .repos__single__details__date {
+        padding: 0 16px;
+        margin: 0; }

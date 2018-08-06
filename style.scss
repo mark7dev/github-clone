@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700');
+
+* {
+    box-sizing: content-box;
+}
+
+body{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1%;
+    // padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    background-color: #eeeeee;
+
+    padding: 10px 30px;
+
+    &__logo{
+        width: 25%;
+
+        display: flex;
+        justify-content: center;
+        img{
+            height: 50px;
+            width: 50px;
+        }
+    }
+    &__search{
+        width: 30%;
+        margin: 0;
+
+        display: flex;
+        align-items: center;
+        input{
+            width: 100%;
+        }
+    }
+    &__options{
+        width: 45%;
+        padding: 0;
+        padding-left: 10%;
+        margin: 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            display: inline;
+        }
+    }
+}
+
+.full-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    padding-left: 20px;
+    padding-top: 20px;
+
+    width: 200px;
+    &__photo{
+        width: 200px;
+        img{
+            border-radius: 8px;
+            width: 200px;
+        }
+    }
+    &__button{
+        width: 100%;
+    }
+    &__report-user{
+        font-size: 10px;
+        color: gray;
+    }
+    &__workplace{
+        margin: 0;
+    }
+    &__email{
+        font-size: 12px;
+    }
+    &__web{
+        font-size: 12px;
+    }
+}
+
+.repos{
+    width: 100%;
+    &__single{
+        padding: 0 5%;
+        &__details{
+            display: flex;
+            flex-direction: row;
+
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+            &__language{
+                padding-right: 16px;
+                margin: 0;
+                border-right: black solid 1px;
+            }
+            &__commits{
+                padding:0 16px;
+                margin: 0;
+                border-right: black solid 1px;
+            }
+            &__date{
+                padding:0 16px;
+                margin: 0;
+            }
+        }
+    }
+}
